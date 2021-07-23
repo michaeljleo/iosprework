@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipControl: UISlider!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipPercentageLabel: UILabel!
+    @IBOutlet weak var numOfPeopleLabel: UILabel!
+    @IBOutlet weak var numOfPeopleStepper: UIStepper!
     
     
     override func viewDidLoad() {
@@ -26,16 +28,17 @@ class ViewController: UIViewController {
         //Gets the bill amount
         let bill = Double(billAmountTextField.text!) ?? 0
         
-        //Gets the total tip and multiplies it by the tip percentage
+        //Gets the total tip
         //Casts the value to an int to only get whole percentages
         let tipPercentages = Int(tipControl.value)
         
-        
+        //Gets the number of people
+        let numPeople = Int(numOfPeopleStepper.value)
         
         
         //Recasts as a Double to avoid error
-        let tip = bill * (Double(tipPercentages) / 100)
-        let total = bill + tip
+        let tip = (bill * (Double(tipPercentages) / 100)) / Double(numPeople)
+        let total = bill + (tip * Double(numPeople))
         
         //Updates the tip percentage label
         tipPercentageLabel.text = String(tipPercentages) + "%"
@@ -46,7 +49,8 @@ class ViewController: UIViewController {
         //Updates the total amount
         totalLabel.text = String(format: "$%.2f", total)
         
-        
+        //Updates the number of people
+        numOfPeopleLabel.text = "Number of People: " + String(numPeople)
         
         
         
