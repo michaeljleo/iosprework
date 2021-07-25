@@ -22,13 +22,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        self.title = "Tip Calculator"
     }
 
     @IBAction func calculateTip(_ sender: Any) {
         //Gets the bill amount
         let bill = Double(billAmountTextField.text!) ?? 0
         
-        //Gets the total tip
+        //Gets the tip percentage
         //Casts the value to an int to only get whole percentages
         let tipPercentages = Int(tipControl.value)
         
