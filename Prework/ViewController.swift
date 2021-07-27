@@ -18,12 +18,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var numOfPeopleLabel: UILabel!
     @IBOutlet weak var numOfPeopleStepper: UIStepper!
     
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         self.title = "Tip Calculator"
+        //Gets the tip percentage from default value
+        let tip = defaults.integer(forKey: "tipDefault")
+        tipControl.value = Float(tip)
+        tipPercentageLabel.text = String(tip) + "%"
     }
 
     @IBAction func calculateTip(_ sender: Any) {
