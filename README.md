@@ -1,17 +1,17 @@
-# Pre-work - Tip Calculator
+# Pre-work - TipCalc
 
-Tip Calculator is a tip calculator application for iOS.
+TipCalc is a tip calculator application for iOS.
 
 Submitted by: Michael Leo
 
-Time spent: 1 hour spent in total
+Time spent: 8 hours spent in total
 
 ## User Stories
 
 The following **required** functionality is complete:
 
-* [ ] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
-* [ ] User can select between tip percentages by tapping different values on the segmented control and the tip value is updated accordingly
+* [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [x] User can select between tip percentages by tapping different values on the segmented control and the tip value is updated accordingly
 
 The following **optional** features are implemented:
 
@@ -22,7 +22,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [ ] Settings menu with default tip amount.
 
 ## Video Walkthrough
 
@@ -34,7 +34,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-When creating the application I ran into an issue where I used the wrong method and the array would go out of bounds.
+I attempted to use constraints but wasn't successful.
 
 ## License
 
