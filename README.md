@@ -22,15 +22,15 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] Settings menu with default tip amount.
+- [x] Settings menu with default tip amount.
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+<img src='https://github.com/michaeljleo/iosprework/blob/main/tipCalc.gif' title='TipCalc' width='' alt='TipCalc' />
+
+GIF created with [EZGIF](https://ezgif.com/video-to-gif).
 
 ## Notes
 
