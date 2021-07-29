@@ -29,6 +29,9 @@ class ViewController: UIViewController {
         let tip = defaults.integer(forKey: "tipDefault")
         tipControl.value = Float(tip)
         tipPercentageLabel.text = String(tip) + "%"
+        
+        //Makes the keyboard stay visible and puts it on the text field.
+        self.billAmountTextField.becomeFirstResponder()
     }
 
     @IBAction func calculateTip(_ sender: Any) {
